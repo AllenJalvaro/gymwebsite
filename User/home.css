@@ -1,0 +1,108 @@
+/* Add your custom styles here */
+h2 {
+    font-size: 24px;
+    color: #161A30; /* Updated text color */
+    margin-bottom: 20px;
+}
+
+/* Optionally, you can add more styling for a personalized touch */
+h2::after {
+    content: '!';
+    color: #161A30; /* Change the color as desired */
+    font-size: 28px;
+    margin-left: 5px;
+}
+
+.header-area {
+    background-color: #F0ECE5; /* Updated background color */
+    padding: 15px 0;
+}
+
+.logo {
+    color: #161A30; /* Updated text color */
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.logo em {
+    font-style: normal;
+    color: #3498db;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav li {
+    margin-right: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #161A30; /* Updated text color */
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #3498db;
+}
+
+.menu-trigger {
+    display: none;
+}
+
+.profile-avatar {
+    width: 50px;
+    height: 50px; /* Adjust this value for height */
+    background-color: #161A30;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F0ECE5;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #F0ECE5; /* Updated background color */
+        z-index: 1;
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+    .menu-trigger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-trigger span {
+        color: #161A30; /* Updated text color */
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .profile-avatar {
+        margin-right: 15px;
+    }
+}

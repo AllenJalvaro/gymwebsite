@@ -1,0 +1,59 @@
+body, html {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; 
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #007bff;
+}
+
+#userTable {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+#userTable th,
+#userTable td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6; 
+}
+
+#userTable th {
+    background-color: #007bff; 
+    color: #fff;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 8px 12px;
+    margin: 2px;
+    cursor: pointer;
+    background-color: #28a745; 
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+.delete-btn {
+    background-color: #dc3545; 
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+    background-color: #218838; 
+}

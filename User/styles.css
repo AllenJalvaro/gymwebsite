@@ -1,0 +1,313 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.header-area {
+    background-color: #fff; /* Set your desired background color */
+    border-bottom: 1px solid #ddd; /* Set border color */
+    padding: 20px 0;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Set logo color */
+    text-decoration: none;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    margin-right: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #555; /* Set link color */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #31304D; /* Set link color on hover */
+}
+
+.main-button a {
+    background-color: #161A30; /* Set button background color */
+    color: #fff; /* Set button text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.menu-trigger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+    .nav li {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .menu-trigger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* Add your custom styles here */
+
+.home-section {
+    background-image: url(img/homebg.png);
+    padding: 80px 0;
+    color: #fff; /* Set text color to contrast with the background */
+    text-align: center; /* Center-align the text */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.section-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333; /* Set title color */
+}
+
+.section-subtitle {
+    font-size: 65px;
+    font-weight: bold;
+    color: #555; /* Set subtitle color */
+    margin-bottom: 30px;
+}
+
+.section-description {
+    font-size: 16px;
+    color: #777; /* Set description color */
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #161A30; /* Set button background color */
+    color: #fff; /* Set button text color */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #31304D; /* Set button background color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .home-section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-subtitle {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .section-description {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Add your custom styles here */
+
+.training-guide-section {
+    padding: 80px 0;
+    background-color: #f8f8f8;
+}
+
+.training-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    height: 100%; /* Set a fixed height for the training boxes */
+    display: flex;
+    flex-direction: column;
+}
+
+.training-box:hover {
+    transform: translateY(-5px);
+}
+
+.training-box img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensure the image covers the entire container without stretching */
+    margin-bottom: 15px;
+}
+
+.box-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.box-description {
+    font-size: 16px;
+    color: #555;
+}
+
+.schedule-section {
+    padding: 80px 0;
+    background-color: #F0ECE5;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.section-description {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.schedule-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.schedule-option {
+    width: 30%;
+    padding: 20px;
+    background-color: #B6BBC4;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-option h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.schedule-option p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Add your custom styles here */
+
+.contact-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.section-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.btn-primary {
+    background-color: #161A30;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #31304D;
+}
+
+.footer {
+    background-color: #161A30;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
